@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet Shop</title>
+    <!-- styling -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-weight: bold;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(105, 99, 220);
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 100px;
+        background-color: rgb(85, 77, 235);
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+      }
+      ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 0px 10px;
+        border: 2px solid white;
+        border-radius: 50px;
+        margin: 0 5px;
+        transition: 0.5s;
+      }
+      ul li a:hover {
+        background-color: rgb(244, 21, 21);
+        color: rgb(13, 13, 15);
+      }
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        border: 2px solid white;
+        padding: 5px 10px;
+      }
+      .signup {
+        background-color: white;
+        color: rgb(85, 77, 235);
+      }
+      .signup:hover {
+        background-color: rgb(40, 30, 236);
+        color: white;
+      }
+
+      main {
+        display: flex;
+        height: 100vh;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 100px;
+        margin: 0 auto;
+      }
+      .contentLeft {
+        flex: 1;
+        margin-left: 100px;
+      }
+
+      .contentMid {
+        flex: 2;
+        max-width: 500px;
+        background-color: #6a5acd;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-right: 20px;
+      }
+      .para {
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
+
+      .contentright {
+        margin-left: 30px;
+        flex: 1;
+      }
+      .mars {
+        width: 100%;
+        height: 100%;
+      }
+      .buynow {
+        padding: 10px 20px;
+        background-color: white;
+        color: rgb(85, 77, 235);
+        border: 2px solid white;
+        border-radius: 50px;
+        margin-top: 20px;
+        transition: 0.5s;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .buynow:hover {
+        background-color: rgb(40, 30, 236);
+        color: white;
+      }
+      main h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Logo</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Offers</a></li>
+          <li><a href="#">Buy now</a></li>
+          <li><a href="#">Sell now</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#" class="signup">Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contentLeft">
+        <h2>Mars</h2>
+      </div>
+      <div class="contentMid">
+        <p class="para">
+          Imagine owning a piece of the Red Planet! With stunning landscapes,
+          unique geological formations, and the promise of future exploration,
+          Mars is the ultimate investment in the future. Secure your plot today
+          and be part of the next great adventure in human history. Whether for
+          scientific research, personal curiosity, or just the thrill of owning
+          extraterrestrial property, Mars is the hottest real estate in the
+          solar system. Don't miss your chance to claim your stake on Mars!
+        </p>
+        <button class="buynow">Buy Now</button>
+      </div>
+      <div class="contentright">
+        <img src="images/mars.png " class="mars" alt="" />
+      </div>
+    </main>
+  </body>
+</html>
